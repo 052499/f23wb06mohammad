@@ -7,9 +7,6 @@ block content
   button(type="button", class="btn btn-primary" onclick="goFaster()") Press Me
   br
   div#faster Increase the speed
-
-
-  
     script.
       var mph = 20;
       var change = 1;
@@ -18,5 +15,5 @@ block content
         mph += change;
         change += 1;
         var div = document.getElementById("faster");
-        div.textContent = "MPH " + mph + " with change " + change;
-      }
+        div.textContent = "MPH " + mph + " with change " +change;
+      }
