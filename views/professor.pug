@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  - var results =[{name:"Ajay", experience:3, subject:"java"},{name:"Chandra Mouli", experience:4, subject:"web apps"},{name:"chetti prasad", experience:5, subject:"adbs"}]
+  div(class="container-fluid")
+  div(class="row")
+   each v,index  in results 
+    div(class="col-sm-2" ) #{v.name}, #{v.experience}, #{v.subject}
+
+    
