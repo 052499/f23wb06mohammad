@@ -8,4 +8,8 @@ block content
    each v,index  in results 
     div(class="col-sm-2" ) #{v.name}, #{v.size}, #{v.speed}
 
-    
+    script.
+        function buy(a)
+        {
+            alert(You purchased Item ${a+1})
+        }
