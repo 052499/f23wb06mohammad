@@ -6,10 +6,10 @@ block content
   div(class="container-fluid")
   div(class="row")
    each v,index  in results 
-    div(class="col-sm-2" ) #{v.name}, #{v.size}, #{v.speed}
+    div(class="col-sm-2" onclick =`buy(${index})`) #{v.name}, #{v.size}, #{v.speed}
 
     script.
         function buy(a)
         {
-            alert(`planet data ${a+1}`)
+            alert(`You purchased Item ${a+1}`)
         }
